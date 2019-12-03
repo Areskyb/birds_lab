@@ -10,7 +10,8 @@
 </template>
 
 <script>
-import { eventBus } from '../main';
+import { eventBus } from '../main'
+import SightingService from '../services/SightingService.js'
 export default {
 	name: "sightings-grid",
 	props: ["sightings"],
