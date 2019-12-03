@@ -9,7 +9,7 @@ export default {
     return fetch(baseURL, {
       method: 'POST',
       body: JSON.stringify(bird),
-      header: {'content-type': 'application/json'}
+      headers: {'content-type': 'application/json'}
     })
     .then(result => result.json())
   }
