@@ -23,6 +23,9 @@ export default {
     'sightings-grid': SightingsGrid
   },
   mounted(){
+    eventBus.$on("sighting-added",(birdData) => {
+      this.sightings.push(birdData)
+    })
     this.fetchData();
   },
   methods: {
